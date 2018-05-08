@@ -1,0 +1,89 @@
+/*
+ * Base Settings
+ */
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: black;
+	color: white;
+}
+
+#product-content {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+.checked {
+	color: orange;
+}
+#product-content .container {
+	margin-top: 10%;
+}
+#product-content .close {
+	margin-right: 10px;
+	font-size: 50px;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+#top-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.logo {
+	width: 100%;
+	font-family: 'Permanent Marker', cursive;
+	text-align: center;
+	display: inline-block;
+}
+
+#main-content {
+	margin-top: 25%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+ * Sales area
+ */
+#sales-content {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+/*
+ * Shop area
+ */
+.card-fork-img {
+	height: 100px;
+	width: 100px;
+	margin: 5px auto;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	/* if you use IE8 or lower, you don't deserve these pitchforks. If you think you need a pitchfork, paypal tylrcarr@gmail.com $20 and I'll let you teamviewer into my computer and use a real man's browser. */
+}
+.card-footer {
+	text-align: center;
+}
+.card-full {
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+}
+
+#shop-content {
+	display: none;
+}
+
