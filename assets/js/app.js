@@ -5,20 +5,89 @@ const features = [
 	"versatility",
 	"weight"
 ];
-$(document).ready(function() {
-	for (let i = 0; i < Object.keys(pitchforks).length; i++){ let pf = pitchforks[i]; $("#shop-content .row").append(new cardFactory(pf.name, /*remove when on github */ "." + pf.picture, pf.description, i));
-	}
-	$("#product-content .close").click(function() { $("#product-content").hide();
+$(document).ready(function() { 
+	let min = Object.keys(pitchforks).reduce((min, p) => pitchforks[p].price < min ? pitchforks[p].price : min, pitchforks[0].price);
+	let max = Object.keys(pitchforks).reduce((max, p) => pitchforks[p].price > max ? pitchforks[p].price : max, pitchforks[0].price);
+	$("#low").attr("min", min).attr("max", max).val(min);
+	$("#high").attr("min", min).attr("max", max).val(max);
+	getForks();
+	$("#product-content .close").click(function() { 
+		$("#product-content").hide();
 		$("body").css("overflow", "auto");
 	});
-});
-
-$("#shop-btn").click(function() {
-	$("#sales-content").fadeOut("slow", function() {
-		$("#shop-content").fadeIn();
+	$(document).keyup(function(e){ 
+		if (e.key === "Escape" && $("#product-content").is(":visible")){
+			$("#product-content").hide();
+			$("body").css("overflow", "auto");
+		};
 	});
+	$(".price").blur(checkMinMax);
+
+	$("#high").blur(function(){
+		$("#low").attr("max", $("#high").val());
+		getForks();
+	});
+	$("#low").blur(function(){
+		$("#high").attr("min", $("#low").val());
+		getForks();
+	});
+	$("#shop-btn").click(function(){changeView("shop");});
+	$(".nav-link").click(function(e){changeView($(this).data("section"))});
+	$(".star-slider").on("input", function(){
+		let id = "#" + $(this).attr('id');
+		$(`${id}-val`).html($(id).val());
+		getForks();
+	});
+	$("#class-container .class").change(getForks);
 });
 
+function getForks() {
+	$("#card-container").empty();
+	let low = parseInt($("#low").val());
+	let high = parseInt($("#high").val());
+	let a = $("#aesthetic").val();
+	let p = $("#portability").val();
+	let e = $("#ergonomics").val();
+	let v = $("#versatility").val();
+	let w = $("#weight").val();
+	let c = [];
+	$("#class-container .class:checked").each(function() {
+		c.push($(this).attr("id"));
+	});
+	console.log(c);
+	for (let i = 0; i < Object.keys(pitchforks).length; i++){ 
+		let pf = pitchforks[i]; 
+		let pfr = pf.ratings;
+		console.log(pf.price >= low, pf.price <= high, pfr.aesthetic >= a, pfr.portability >= p, pfr.ergonomics >= e, pfr.versatility >= v, pfr.weight >= w, c.includes(pf["class"]));
+		if (pf.price >= low && pf.price <= high && pfr.aesthetic >= a && pfr.portability >= p && pfr.ergonomics >= e && pfr.versatility >= v && pfr.weight >= w && c.includes(pf["class"])){
+			$("#card-container").append(new cardFactory(pf.name, /*remove when on github */ "." + pf.picture, pf.description, i)); 
+		}
+	}
+
+}
+
+function checkMinMax(ev) {
+	let e = ev.target;
+	let max = parseInt($(e).attr("max"));
+	let min = parseInt($(e).attr("min"));
+	let val = parseInt($(e).val());
+
+	if (val > max){
+		$(e).val(max);
+	}
+	if (val < min){
+		$(e).val(min);
+	}
+}
+
+function changeView(to) {
+	$("li.nav-item.active").removeClass("active");
+	$(`#${to}-link`).addClass("active");
+	$("#main-content .content-div:visible").fadeOut("slow", function() {
+		$(`#${to}-content`).fadeIn();
+	});
+	
+}
 function cardFactory (name, pic, desc, num) {
 	let cont = document.createElement("div");
 	cont.className = "card-container col-md-6 col-lg-4 col-xl-3";
@@ -57,7 +126,7 @@ function noscroll() {
 
 function openInfo (fork) {
 	let pf = pitchforks[fork];
-	const attrs = ["portability", "aesthetic", "ergonomics", "versatility", "price"];
+	const attrs = ["portability", "aesthetic", "ergonomics", "versatility", "weight"];
 	$("body").css("overflow", "hidden");
 	// remove period when on github
 	$("#product-content .container").empty().append(`<h1>${pf.name}</h1>`);
@@ -103,14 +172,12 @@ function openInfo (fork) {
 	for (let i = 0; i < 5; i++) {
 		let attr = attrs[i];
 		$("#product-content .stars-content").append(`<div id='${attr}' class="d-flex mb-sm-4 justify-content-between"><div>${attr}:</div><div><span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></div></div>`);
-		console.log(pf.ratings[attr]);
 		$(`#${attr}`).find(".fa-star").slice(0, pf.ratings[attr]).each(function (j) {
 			$(this).addClass("checked");
 		});
 	}
 	$("#product-content .row").append("<div class='review-section col-sm-6 col-md-8 col-lg-9 float-right'></div>");
 	for (let i = 0; i < pf.reviews.length; i++) {
-		console.log(pf.reviews[i]);
 		let review = pf.reviews[i];
 		$("#product-content .review-section").append(`<blockquote class="blockquote product-review"><p class="mb-0">${review.text}</p><footer class="blockquote-footer">${review.name}</footer></blockquote>`);
 
