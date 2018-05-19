@@ -75,16 +75,16 @@ const pitchforks = {
 		"class": "melee",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Mini Me",
+				"text": "This fit me well, and it really helped me get at the ankles of my foes."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "PitchForkLover766",
+				"text": "Great value on the fork, I used this in many close range situations."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Maya Angelou",
+				"text": "Great fork, I recommended this to all of my friends."
 			}
 		],
 		"ratings": {
@@ -106,16 +106,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Babe Ruth",
+				"text": "If I had this when I played ball, there would be no more losses."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Mother Teresa",
+				"text": "This is the fork we use to protect the church. Highly recommend, 10/10."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "LeBron James",
+				"text": "I wouldn't trust any other fork than this one. If I had it on my team, we'd be perennial champions."
 			}
 		],
 		"ratings": {
@@ -137,16 +137,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "This is why I created the circle. Great design.",
+				"text": "The creator of the circle"
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Vince Lombardi",
+				"text": "I don't know why I was asked to make a review."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Kenny Chesney",
+				"text": "I not only used this on the farm I worked at, but the mobs I hung around in. Great value."
 			}
 		],
 		"ratings": {
@@ -168,16 +168,16 @@ const pitchforks = {
 		"class": "ground",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Bob Marley",
+				"text": "I love this one. I use it nearly every day."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Thorin Oakenshield",
+				"text": "This would've been useful..."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Peter Dinklage",
+				"text": "As much as I hate it, it's a very effective fork."
 			}
 		],
 		"ratings": {
@@ -199,16 +199,16 @@ const pitchforks = {
 		"class": "wide",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Madonna",
+				"text": "I love this. Very stable and useful fork."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Fidel Castro",
+				"text": "I could've used this a few years ago. Oh well, still don't regret my purchase."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Mark Wahlberg",
+				"text": "I like WideFork more and more each day because it makes my life a lot easier."
 			}
 		],
 		"ratings": {
@@ -230,16 +230,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "PitchForkUser6969",
+				"text": "This was my first fork, and I never looked back."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Kim Kardashian",
+				"text": "I will let my mom know about this, she could really make use of BeginniFork! I could probably go into sales for you."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Kareem Abdul-Jabbar",
+				"text": "Man, this thing is getting better and better as I learn more about it."
 			}
 		],
 		"ratings": {
@@ -261,16 +261,16 @@ const pitchforks = {
 		"class": "wide",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Usain Bolt",
+				"text": "I don't even have to run around a person to attack them. This does the job perfectly."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Tiger Woods",
+				"text": "Just what I was looking for. I love your system."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Jay Leno",
+				"text": "Sometimes I'm not even sure what I should write, so I make something up. Not in this case."
 			}
 		],
 		"ratings": {
@@ -292,16 +292,16 @@ const pitchforks = {
 		"class": "ground",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Lil Wayne",
+				"text": "Are these reviews real reviews? Inconclusive."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Abraham Lincoln",
+				"text": "You can't believe everything you see on the internet. Except for me when I say this is the best fork I've ever used."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Barbra Streisand",
+				"text": "This might've been useful to prevent a whole psychology theory written about me. Oh well."
 			}
 		],
 		"ratings": {
@@ -323,16 +323,16 @@ const pitchforks = {
 		"class": "special",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Donald Trump",
+				"text": "The pitchfork of a true leader."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Anonymous Tumblr User",
+				"text": "This fork definitely is my A E S T H E T I C."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Glenn Beck",
+				"text": "A E S T H E T I F O R K is worth much more than I paid. A E S T H E T I F O R K is awesome!"
 			}
 		],
 		"ratings": {
@@ -354,16 +354,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Little did everyone know, this is my weapon of choice.",
+				"text": "Zodiac Killer"
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Michael Jordan",
+				"text": "Came in handy when silencing my opponents."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Karl Marx",
+				"text": "A true fork of the workers! The blood of the bougeoisie will no longer stain your tools!"
 			}
 		],
 		"ratings": {
@@ -385,16 +385,16 @@ const pitchforks = {
 		"class": "special",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Nicholas Cage",
+				"text": "Not even sure why you guys asked me to review this, I don't even use pitchforks."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "George Bush",
+				"text": "Definitely a useful tool in multiple invasions."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Bill Gates",
+				"text": "Without the CrushFork, we would've gone bankrupt."
 			}
 		],
 		"ratings": {
@@ -416,16 +416,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Ron Paul",
+				"text": "At this point, if you're reading the reviews, you either want to laugh or cry. Well, too bad, you get neither."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "William Shakespeare",
+				"text": "We were treated like royalty. I just can't get enough of MedievaFork."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Carl Sagan",
+				"text": "I'm just giving a review because they threatened my kids. Good fork, would buy again."
 			}
 		],
 		"ratings": {
@@ -447,16 +447,16 @@ const pitchforks = {
 		"class": "basic",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "The Dutch",
+				"text": "Great fork, I wouldn't buy any other fork."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Anonymous",
+				"text": "Thanks to OrangoFork, we've just launched our 5th website!"
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Che Guevara",
+				"text": "Definitely worth the investment."
 			}
 		],
 		"ratings": {
@@ -478,16 +478,16 @@ const pitchforks = {
 		"class": "melee",
 		"reviews": [
 			{
-				"name": "",
-				"text": ""
+				"name": "Charles Darwin",
+				"text": "This really helped teach my children of the importance of the fork. May they live long enough to pass on their genes!"
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Nostradamus",
+				"text": "Even though my prophecies weren't exactly perfect, this pitchfork was."
 			},
 			{
-				"name": "",
-				"text": ""
+				"name": "Marie Antoinette",
+				"text": "Would've been useful to arm my children with."
 			}
 		],
 		"ratings": {

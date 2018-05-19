@@ -148,6 +148,16 @@ body {
     cursor: pointer;
 }
 /*
+ * About section
+ */
+#about-content {
+	display: none;
+}
+#me {
+	border-radius: 50%;
+	max-width: 50%;
+}
+/*
  * Footer
  */
 #lab_social_icon_footer {

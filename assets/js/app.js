@@ -182,5 +182,5 @@ function openInfo (fork) {
 		$("#product-content .review-section").append(`<blockquote class="blockquote product-review"><p class="mb-0">${review.text}</p><footer class="blockquote-footer">${review.name}</footer></blockquote>`);
 
 	}
-	$('#product-content').css("display", "flex").hide().show("scale",{}, 1000);
+	$('#product-content').css("display", "flex").hide().fadeIn("slow");
 }
